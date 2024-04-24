@@ -19,18 +19,12 @@
 
 nums1 = []
 nums2 = []
-
-# Taking input for nums1
 m = int(input("Enter number of elements in nums1: "))
 for i in range(m):
     nums1.append(int(input("Enter element for nums1: ")))
-
-# Taking input for nums2
 n = int(input("Enter number of elements in nums2: "))
 for i in range(n):
     nums2.append(int(input("Enter element for nums2: ")))
-
-# Merging the two sorted arrays
 merged = []
 i = j = 0
 while i < m and j < n:
@@ -46,8 +40,6 @@ while i < m:
 while j < n:
     merged.append(nums2[j])
     j += 1
-
-# Finding median of merged array
 total_length = m + n
 if total_length % 2 != 0:
     median = merged[total_length // 2]
